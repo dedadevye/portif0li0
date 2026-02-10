@@ -1,0 +1,189 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Doto:wght@100..900&family=Grenze+Gotisch:wght@100..900&display=swap');
+
+:root{
+     
+    --cor-primaria: #97F2DA;
+    --cor-secundaria: #47526e;
+    --cor-terceraria: #F2AC97; 
+    --fonte-primaria: "Astloch", system-ui;
+    --fonte-secundaria: "Doto", sans-serif;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    line-height: 2.0;
+
+}
+
+.titulo-destaque {
+    color: var(--cor-terceraria);
+}
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao_imagem {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* MELHORIA: Sombra suave */
+    object-fit: cover;
+     }
+
+.apresentacao-conteudo {
+ width: 615px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size:36px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px
+}
+
+.apresentacao_links_subtitulo{
+   font-family: var(--fonte-primaria);
+   font-weight: 400;
+   font-size: 24px;
+}
+
+.apresentacao_links_link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor-terceraria);
+  background-color: white;
+  width: 378px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5%;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links_link: hover {
+    background-color: var(--cor-terciaria);
+    color: #F2AC97;
+    transform: translateY(-2px); /* MELHORIA: Feedback visual */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terceraria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;   
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+    position: sticky; /* MELHORIA: Menu fixo facilita navegação */
+    top: 0;
+    z-index: 100;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+    justify-content:space-around;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color:var(--fonte-secundaria);
+    text-decoration: none;
+    /* MELHORIA: padding, borda e transicao */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    
+}
+
+   .icon-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+
+    .btn-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        font-size: 22px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .btn-icon-instagram {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .btn-icon-instagram:hover {
+        transform: scale(1.15) rotate(-5deg);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .btn-icon-linkedin {
+        background: #0077b5;
+    }
+
+    .btn-icon-linkedin:hover {
+        background: #005a87;
+        transform: scale(1.15) rotate(5deg);
+        box-shadow: 0 8px 20px rgba(0, 119, 181, 0.6);
+    }
+
+    .btn-icon-github {
+        background: #333;
+    }
+
+    .btn-icon-github:hover {
+        background: #1a1a1a;
+        transform: scale(1.15);
+        box-shadow: 0 8px 20px rgba(51, 51, 51, 0.6);
