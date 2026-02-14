@@ -61,6 +61,8 @@ body {
 .apresentacao_conteudo_texto {
     font-size: 20px;
     font-family: var(--fonte-secundaria);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .apresentacao_links{
@@ -161,29 +163,29 @@ body {
     }
 
     .btn-icon-instagram {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #8e9cd7 0%, #d394c6 100%);
     }
 
     .btn-icon-instagram:hover {
         transform: scale(1.15) rotate(-5deg);
-        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        box-shadow: 0 8px 20px rgba(150, 166, 238, 0.6);
     }
 
     .btn-icon-linkedin {
-        background: #0077b5;
+        background: #76bce2;
     }
 
     .btn-icon-linkedin:hover {
-        background: #005a87;
+        background: #7ec6ea;
         transform: scale(1.15) rotate(5deg);
-        box-shadow: 0 8px 20px rgba(0, 119, 181, 0.6);
+        box-shadow: 0 8px 20px rgba(149, 206, 237, 0.734);
     }
 
     .btn-icon-github {
-        background: #333;
+        background: #f8bac3;
     }
 
     .btn-icon-github:hover {
-        background: #1a1a1a;
+        background: #bb79a5;
         transform: scale(1.15);
-        box-shadow: 0 8px 20px rgba(51, 51, 51, 0.6);
+        box-shadow: 0 8px 20px rgba(243, 194, 194, 0.677);
