@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
-
-    <link rel="stylesheet" href="./styles/style.css">
-   
-
+    <title>Sobre | Yeda Maria</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
 
+<body>
+    <!-- CABEÇALHO -->
     <header class="cabecalho">
         <nav class="cabecalho_menu">
-            <a class="cabecalho_menu_link" href="index.html">
-                Início
-            </a>
-
-            <a class="cabecalho_menu_link" href="about.html">
-                Minha trajetória
-            </a>
+            <a class="cabecalho_menu_link" href="index.html">Início</a>
+            <a class="cabecalho_menu_link ativo" href="about.html">Minha trajetória</a>
+            <a class="cabecalho_menu_link" href="contato.html">Contato</a>
         </nav>
     </header>
-    
-    <main class="apresentacao">
-        
-        <section class="apresentacao_conteudo">
 
-            <h1 class="apresentacao_conteudo_titulo">Sobre Mim</h1>
-            <p class="apresentacao_conteudo_texto"> 
-    Possuo Formação em:
+    <!-- SEÇÃO SOBRE -->
+    <section class="sobre">
+        <h1 class="sobre_titulo">Sobre Mim</h1>
 
-    <strong> Bacharelado Interdisciplinar em Artes</strong>
-    Universidade Federal da Bahia (UFBA) - Instituto de Humanidades, 
-    Artes e Ciências Prof. Milton Santos. 
-</p>
+        <div class="sobre_conteudo">
+            <!-- FORMAÇÃO ACADÊMICA -->
+            <div class="sobre_secao">
+                <h2 class="sobre_secao_titulo">Formação Acadêmica</h2>
 
-<p class="apresentacao_conteudo_texto"> 
+                <p class="sobre_secao_texto">
+                    <strong>Bacharelado Interdisciplinar em Artes</strong>  
 
-   E em <strong> Produção de Conteúdo para Internet  </strong> 
-    pela Academia Internacional de Cinema (AIC)
+                    Universidade Federal da Bahia (UFBA) - Instituto de Humanidades, Artes e Ciências Prof. Milton Santos.
+                </p>
 
-</p>
+                <p class="sobre_secao_texto">
+                    <strong>Produção de Conteúdo para Internet</strong>  
 
-<p class="apresentacao_conteudo_texto"> 
+                    Academia Internacional de Cinema (AIC)
+                </p>
 
-    Atualmente cursando
-   <strong> Jovem Tech </strong> - Desenvolvimento de Sistemas e 
-   <strong> Geração Tech </strong> - Desenvolvimento Full-Stack.
-</p>
+                <p class="sobre_secao_texto">
+                    <strong>Jovem Tech - Desenvolvimento de Sistemas</strong>  
 
-<p class="apresentacao_conteudo_texto"> 
+                    Programa de formação em desenvolvimento de sistemas e lógica de programação.
+                </p>
 
-    Possuo proficiência em
-    <strong> Desenvolvimento: </strong> HTML5, CSS3, JavaScript
-    <strong> Design:</strong> Figma, Photoshop, Illustrator, Inkscape
-    <strong> Edição: </strong> Adobe Premiere, GIMP, Krita, etc. 
+                <p class="sobre_secao_texto">
+                    <strong>Geração Tech - Desenvolvimento Full-Stack</strong>  
 
-</p>
-<p class="apresentacao_conteudo_texto">
+                    Programa de formação em desenvolvimento completo de aplicações web.
+                </p>
+            </div>
 
-    Transformo conceitos criativos em experiências digitais que conectam 
-    arte e tecnologia, sempre focando em interfaces funcionais, responsivas 
-    e acessíveis.
-    </p>
+            <!-- HABILIDADES -->
+            <div class="sobre_secao">
+                <h2 class="sobre_secao_titulo">Habilidades & Competências</h2>
 
-</p>
-        </section>
+                <div class="habilidades_grid">
+                    <div class="habilidade_card">
+                        <div class="habilidade_card_titulo">Desenvolvimento</div>
+                        <div class="habilidade_card_texto">
+                            HTML5, CSS3, JavaScript, React, TypeScript
+                        </div>
+                    </div>
 
-    </main>
+                    <div class="habilidade_card">
+                        <div class="habilidade_card_titulo">Design</div>
+                        <div class="habilidade_card_texto">
+                            Figma, Photoshop, Illustrator, Inkscape
+                        </div>
+                    </div>
 
+                    <div class="habilidade_card">
+                        <div class="habilidade_card_titulo">Edição & Criação</div>
+                        <div class="habilidade_card_texto">
+                            Adobe Premiere, GIMP, Krita, Edição de Vídeo
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILOSOFIA -->
+            <div class="sobre_secao">
+                <h2 class="sobre_secao_titulo">Minha Filosofia</h2>
+
+                <p class="sobre_secao_texto">
+                    Transformo conceitos criativos em experiências digitais que conectam arte e tecnologia, sempre focando em interfaces funcionais, responsivas e acessíveis.
+                </p>
+
+                <p class="sobre_secao_texto">
+                    Cada projeto é uma oportunidade de criar algo significativo. Combino princípios de design com tecnologia para construir interfaces que não apenas funcionam, mas que também inspiram e conectam com os usuários.
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="sobre_secao" style="background: linear-gradient(135deg, rgba(151, 242, 218, 0.1) 0%, rgba(242, 172, 151, 0.1) 100%); padding: 30px; border-radius: 12px; margin-top: 40px;">
+                <h2 class="sobre_secao_titulo">Pronto para Colaborar?</h2>
+                <p class="sobre_secao_texto">
+                    Tenho certeza de que podemos criar algo incrível juntos. Vamos conversar sobre seu projeto!
+                </p>
+                <a href="contato.html" class="apresentacao_links_link secundario" style="display: inline-block; margin-top: 8px; padding: 12px 24px; font-size: 16px;">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
     <footer class="rodape">
-        <p>
-            Desenvolvido por Yeda Maria
-        </p>
+        <p>Desenvolvido por Yeda Maria</p>
     </footer>
-
 </body>
 </html>
